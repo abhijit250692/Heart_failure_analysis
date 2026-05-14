@@ -6,6 +6,8 @@ import joblib
 
 st.title('Heart Failure Prediction')
 
+st.image('https://media.licdn.com/dms/image/v2/C4D12AQG6uYy-OXdhVg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1573170080429?e=1780531200&v=beta&t=34-mX2VwgEkjkNqg_KGwcTKKU4Sf-jcQVD_ROErW8lw')  
+
 age = st.slider('Age', 40, 95, 60)
 anaemia = st.selectbox('Anaemia', [0, 1], format_func=lambda x: 'Yes' if x == 1 else 'No')
 creatinine_phosphokinase = st.number_input('Creatinine Phosphokinase', min_value=0, max_value=10000, value=500)
